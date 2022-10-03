@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+float lato obliquo;
+float diagonale minore;
+float diagonale maggiore;
+float perimetro;
+float area;
+
+printf("inserisci lato obliquo");
+scanf("%f",& lato obliquo);
+printf("inserisci la diagonale minore ");
+scanf("%f",& diagonale minore);
+printf("inserisci la diagonale maggiore");
+scanf("%f",& diagonale maggiore);
+perimetro=lato obliquo*4;
+printf("visualizza il perimetro %f", perimetro);
+diagonale minore= sqrt(lato obliquo*lato obliquo)-(diagonale minore/2*diagonale maggiore/2);
+area= (diagonale maggiore*diagonale minore)/2;
+printf("visualizza l'area %f", area);
+rteturn 0;
+}
