@@ -1,0 +1,24 @@
+/*
+lidia angelico 3h
+05\10\2022
+scrivi un programmache visuallizza il resto della duivisione tra 2 numeri interi
+*/
+
+ 
+#include <stdio.h>
+int main()
+{
+int numero1;
+int numero2;
+int risultato;
+int resto;
+ 
+printf(" inserisci il primo numero \t");
+scanf("%d",&numero1);
+printf("inserisci il secondo numero \t");
+scanf("%d",&numero2);
+risultato= numero1/numero2;
+resto=(numero1%numero2);
+printf("visualizza il resto %d \n");
+return 0;
+}
