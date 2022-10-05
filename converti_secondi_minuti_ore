@@ -1,0 +1,26 @@
+/*
+file 
+autore lidia angelico
+data 05\10\2022
+programma legge in input un valore corrispondente a numero di secondi e lo strasforma in ore, minuti e secondi
+*/
+
+
+#include <stdio.h>
+int main()
+{
+
+int secondi;
+int ore;
+int minuti;
+
+printf("inserisci i secondi \t");
+scanf("%d",&secondi);
+minuti = secondi / 60;
+printf(" visuallizza i minuti %d \n",minuti);
+ore = minuti / 60;
+printf(" visuallizza le ore %d \n",ore);
+secondi= secondi-minuti*60;
+printf("visuallizza i secondi %d \n", secondi);
+return 0;
+}
