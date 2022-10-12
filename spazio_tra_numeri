@@ -1,0 +1,20 @@
+/*
+ Dato un numero inserito dall’utente, compreso tra 100 e 999, stampalo in modo che ogni cifra sia separata dalle altre da uno spazio. 
+ */
+
+#include <stdio.h>
+int main()
+{
+int numero;
+int cifra1;
+int cifra2;
+int cifra3;
+
+printf("inserisci un numero tra 100 e 999 \n");
+scanf("%d",& numero);
+cifra1=numero/100;
+cifra2=(numero-cifra1*100)/10;
+cifra3=(numero-(cifra1*100+cifra2*10));
+printf("%d \t %d \t %d \t", cifra1, cifra2, cifra3);
+return 0;
+}
