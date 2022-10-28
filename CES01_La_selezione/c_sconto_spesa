@@ -1,0 +1,41 @@
+/** ****************************************************************************************
+* \mainpage <C_sconto_spesa>
+*
+* @brief Un negoziante per ogni spesa di importo superiore a 50 € effettua uno sconto del 5%, del 10% per ogni spesa superiore a 100 €.
+* Scrivere un programma che richieda all'utente l'ammontare della spesa e visualizzi quindi l'importo effettivo da pagare. 
+* 
+* @author Lidia Angelico
+* @date 26/10/22
+* @version 1.0 26/10/22 Versione iniziale
+*/
+
+
+#include<stdio.h>
+
+int main ()
+{ 
+	float importoInput;
+	float importoOutput;
+	
+	printf("inserisci l'importo della spesa ");
+	scanf("%f",& importoInput);
+	
+	
+		if(importoInput>50)
+	{ 
+		  if (importoInput>100)
+	      {
+	      	importoOutput = importoInput/100*90;
+		  }
+		  else
+		  	{
+		  		importoOutput = importoInput/100*95;
+			}
+		printf("L'importo e %.2f ", importoOutput);
+	}
+	    else
+	     {
+	     	printf("l'importo scontato e'troppo basso per applicare lo sconto ");
+		 }
+	return 0;
+}
