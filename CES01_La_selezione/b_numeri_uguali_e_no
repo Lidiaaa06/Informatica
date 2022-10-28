@@ -1,0 +1,41 @@
+/** ****************************************************************************************
+* \mainpage <B_numeri_uguali_e_no>
+*
+* @brief Scrivere un programma che, richiesti due numeri interi qualsiasi, segnali se i due numeri sono uguali;
+* in caso contrario indichi il minore e il maggiore.
+* 
+* @author Lidia Angelico
+* @date 26/10/22
+* @version 1.0 26/10/22 Versione iniziale
+*/
+#include<stdio.h>
+
+int main ()
+{ 
+	int n1;
+	int n2;
+	
+	printf("inserisci il primo numero");
+	scanf("%d",& n1);
+	printf("inserisci il secondo numero ");
+	scanf("%d",& n2);
+	
+	if(n1==n2)
+	{ 
+		printf ("sono uguali");
+	}
+	else 
+	{ 
+	if (n1>n2)
+	{
+		printf ("%d>%d", n1,n2);
+	}
+	else
+	{
+		printf ("%d>%d", n2,n1);
+	}
+	
+	}
+	
+	return 0;
+}
