@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+
+{
+int n;
+int pari=0;
+
+do
+{
+	printf("inserisci dei numeri casuali ");
+	scanf("%d",&n);
+    if (n%2==0)
+    pari+=1;
+}
+ while (n!=0);
+
+	pari-=1;
+	printf("hai inserito numeri pari : %d",pari);
+}
