@@ -1,0 +1,29 @@
+
+#include <stdio.h>
+int main()
+{
+	int n;
+	int c=0;
+	int max;
+	
+	do 
+	{
+		printf("inserisci numero");
+		scanf ("%d",&n);
+		if(c==0)
+		{ 
+		 max=n;
+		}
+		else 
+		{
+		if(n>max)
+		{
+			max=n;
+		}
+		}
+		c+=1;
+	}
+	while (c<10);
+	
+	printf("Il maggiore e' %d",max);
+}
