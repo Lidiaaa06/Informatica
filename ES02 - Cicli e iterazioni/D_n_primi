@@ -1,0 +1,37 @@
+/** ****************************************************************************************
+* \mainpage D_n_primi.c
+*
+* @brief Scrivere un programma che stampi tutti i numeri primi compresi tra 1 e 100. 
+*        Un numero è primo quando ha come divisore uno e sé stesso. Quindi è primo ciascun 
+*        numero naturale maggiore di 1 che sia divisibile solamente per 1 e per sé stesso.
+* 
+* @author Lidia Angelico
+* @date 07/12/2022
+*/
+
+#include <stdio.h>      
+
+int main()  
+{
+    
+    int cont1; 
+	int cont2;
+	int c=1;  //variabile di controllo inizializzata Vero      
+
+    for(cont1=2; cont1<101; cont1++) 
+	{       
+        
+        for(cont2 = 2; cont2<cont1; cont2++) 
+		{      
+            if(cont1 % cont2 == 0) 
+			{
+                c=0; 
+			}
+        }
+
+        if(c) 
+            printf("%d e' un numero primo \n", cont1);
+         
+        c=1;
+    }
+}
