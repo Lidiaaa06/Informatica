@@ -1,0 +1,147 @@
+/** ****************************************************************************************
+* 
+* @author Lidia Angelico
+* @date 08/10/2023
+*
+*/
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#define N 20
+#define V 10
+#define T 5
+struct data 
+{
+    int gg;
+    int mm;
+    int aa;
+} typedef data;
+struct studente 
+{
+    int matricola;
+    char cognome[N];
+    char nome[N];
+    data nascita;
+    int voti[V];
+} typedef studente;
+void carica(studente[]);
+void stampa(studente[]);
+int ricercaCog(studente[], char[]);
+int stampaMedia(studente[]);
+int studenti10(studente[]);
+int main()
+{
+    srand(time(NULL));
+    studente tab[T];
+    char a[N];
+    int r;
+    carica (tab);
+    stampa(tab);
+    printf("\n\ncognome da cercare: ");
+    scanf("%s", a);
+
+    r = ricercaCog(tab, a);
+    if(r!=-1) printf("\n\ncognome trovato: %s\nindice: %d\n\n", tab[r].cognome, r);
+    if(r!=-1) printf("\n\ncognome trovato: %s\n\n", tab[r].cognome, r);
+    else printf("cognome non trovato\n\n");
+
+    r = stampaMedia(tab);
+    printf("\n %d media dei voti >= 6\n", r);
+    r = studenti10(tab);
+    printf("\nstudenti con almeno un 10: %d\n\n", r);
+}
+
+//carica tabella con informazioni chieste all'utente e/o generate con random
+
+void carica(studente t[])
+{
+    for(int i = 0; i<T; i++)
+    {
+        printf("---inserisci dati studente---\n");
+        
+        t[i].matricola = i+1;
+        printf("inserisci cognome: ");
+        scanf("%s", t[i].cognome);
+        printf("inserisci nome: ");
+        scanf("%s", t[i].nome);
+        t[i].nascita.gg = rand()%30+1;
+        t[i].nascita.mm = rand()%12+1;
+        t[i].nascita.aa = rand()%30+1990;
+        for(int j = 0; j<V; j++) {
+            
+            t[i].voti[j] = rand()%10+1;
+        }
+    }
+}
+
+/*stampa tabella su monitor: si curi quanto viene visualizzato
+allineando colonne e andando a capo per ogni riga, ecc. */
+
+void stampa(studente t[])
+{
+    for(int i = 0; i<T; i++)
+    {
+        printf("\n\n--studente--\n\n");
+        printf("numero matricola: %d\n", t[i].matricola);
+        printf("cognome: %s\n", t[i].cognome);
+        printf("nome: %s\n", t[i].nome);
+        printf("giorno di nascita: %d/%d/%d\n", t[i].nascita.gg, t[i].nascita.mm, t[i].nascita.aa);
+        printf("-voti-\n");
+        for(int j = 0; j<V; j++){
+            printf("%d\t", t[i].voti[j]);
+        }
+        printf("\n\n");
+    }
+    
+}
+
+/*ricerca cognome restituendo indice di riga; se trovato, nel
+main si visualizzi il nome dello studente, altrimenti si visualizzi "cognome non trovato*/
+
+int ricercaCog(studente t[], char cog[])
+{
+    for(int i = 0; i<T; i++)
+    {
+        if(strcmp(t[i].cognome, cog) == 0)
+           return i;
+    }
+    return -1;
+}
+
+/*stampa su monitor il cognome dello studente seguito dalla media dei suoi voti.
+La funzione restituisce quante medie sono maggiori o uguali a 6 e, nel main si effettul printf opportuna
+(es. x studenti hanno media del voti >= di 6)*/
+
+int stampaMedia(studente t[])
+{
+    int c = 0;
+    for(int i = 0, m=0; i < T; i++, m=0)
+    {
+        for(int j = 0; j<V; j++)
+            m += t[i].voti[j];
+        m /= V;
+        if(m>=6) c++;
+        printf("\nmedia studente %s: %d", t[i].cognome, m);
+    }
+    return c;
+}
+
+/*nella funzione si contano quanti studente hanno almeno un voto = 10. La
+funzione restituisce il valore. N. B. : non si chiede quant/ 10 ma quanti studenti,
+cioè lo studente che ha plù di un 10,va contato solo una volta*/
+
+int studenti10(studente t[])
+{
+    int c = 0;
+    for(int i = 0; i<T; i++)
+    {
+        for(int j = 0; j<V; i++)
+            if(t[i].voti[j] == 10)
+            {
+                c++;
+                j = V;
+            }
+    }
+    return c;
+}
