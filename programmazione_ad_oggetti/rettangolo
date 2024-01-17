@@ -59,6 +59,7 @@ class Rettangolo
         cout<<"altezza "<<altezza<<endl;
         cout<<"perimetro "<<perimetro<<endl;
         cout<<"area "<<area<<endl;
+        
     }
 
 }
