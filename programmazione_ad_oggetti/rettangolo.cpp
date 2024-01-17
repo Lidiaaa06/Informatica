@@ -4,10 +4,10 @@ using namespace std;
 class Rettangolo
 {
     private:
-    {
+    
         double base;
         double altezza;
-    }
+    
     public:
 
     Rettangolo()
@@ -28,12 +28,12 @@ class Rettangolo
     {
         this->altezza=altezza;
     }
-    }
-     void getBase()
+    
+    double getBase()
     {
          return base;
     }
-     void getAltezza()
+   double getAltezza()
     {
         return altezza;
     }
@@ -62,6 +62,7 @@ class Rettangolo
         cout<<"diagonale "<<calcolaDiagonale()<<endl;
     }
 };
+
 int main()
 {
     Rettangolo r1;
