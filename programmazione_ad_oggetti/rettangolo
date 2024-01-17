@@ -65,7 +65,7 @@ class Rettangolo
 int main()
 {
     Rettangolo r1;
-    r1.setBase;
-    r1.setAltezza;
-    r1.stampaTutto;
+    r1.setBase();
+    r1.setAltezza();
+    r1.stampaTutto();
 }
