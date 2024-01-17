@@ -24,9 +24,9 @@ class Rettangolo
     {
         this->base=base;
     }
-     void setBase(double base)
+     void setAltezza(double altezza)
     {
-        this->base=base;
+        this->altezza=altezza;
     }
     }
      void getBase()
@@ -49,7 +49,7 @@ class Rettangolo
         x=base*altezza;
         return x;
     }
-    double diagonale()
+    double calcolaDiagonale()
     {
         return sqrt(base*base+altezza*altezza);
     }
@@ -57,9 +57,15 @@ class Rettangolo
     {
         cout<<"base "<<base<<endl;
         cout<<"altezza "<<altezza<<endl;
-        cout<<"perimetro "<<perimetro<<endl;
-        cout<<"area "<<area<<endl;
-        
+        cout<<"perimetro "<<calcolaPerimetro()<<endl;
+        cout<<"area "<<calcolaArea()<<endl;
+        cout<<"diagonale "<<calcolaDiagonale()<<endl;
     }
-
+};
+int main()
+{
+    Rettangolo r1;
+    r1.setBase;
+    r1.setAltezza;
+    r1.stampaTutto;
 }
