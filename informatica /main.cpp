@@ -1,3 +1,4 @@
+#include"Rettangolo.h"
 int main()
 {
     Rettangolo r1;
