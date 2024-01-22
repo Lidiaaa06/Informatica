@@ -1,6 +1,6 @@
 #include<iostream>
 #include<cmath>
-#include"rettangolo.h"
+#include"Rettangolo.h"
 using namespace std;
     
     Rettangolo::Rettangolo()
