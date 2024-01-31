@@ -29,4 +29,9 @@ public class Frazione {
 
         return new Frazione(nuovoNumeratore, nuovoDenominatore);
     }
+    public int semplifica(Frazione)
+    {
+       do 
+       
+    }
 }
