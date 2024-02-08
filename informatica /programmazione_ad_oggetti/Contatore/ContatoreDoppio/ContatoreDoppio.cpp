@@ -10,3 +10,4 @@ void ContatoreDoppio::dec() {
     Contatore::dec();
     Contatore::dec();
 }
+
