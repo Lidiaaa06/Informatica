@@ -8,6 +8,8 @@ public class Frazione
 
     public static void main(String[] args)
     {
+        Frazione f1(8,12)
+        Frazione f2(10,21)
 
     }
 
@@ -40,7 +42,7 @@ public class Frazione
     {
         return numeratore + "/" + denominatore;
     }
-    
+
     // Metodo per sommare due frazioni
     public Frazione somma(Frazione altraFrazione) 
     {
