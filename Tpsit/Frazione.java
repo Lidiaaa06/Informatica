@@ -7,9 +7,35 @@ public class Frazione
     // Costruttore
 
     public static void main(String[] args)
-    {
+    {   int a;
+        Frazione n;
+
         Frazione f1(8,12)
         Frazione f2(10,21)
+
+        a=f1.getDenominatore();
+        System.out.println("denominatore "+ a);
+
+        a=f1.getNumeratore();
+        System.out.println("numeratore "+ a);
+
+        a=f1.setDenominatore();
+
+        a=f1.setNumeratore();
+
+        n=f1.somma();
+        System.out.println("Somma "+ n);
+
+        f1.semplifica();
+
+       n=f1.moltiplica(Frazione altraFrazione);
+       System.out.println("Moltiplica  "+ n);
+
+        n=f1.sottrai(Frazione altraFrazione);
+       System.out.println("Sottrai "+ n);
+
+        n=f1.dividi(Frazione altraFrazione);
+       System.out.println("Dividi  "+ n);
 
     }
 
