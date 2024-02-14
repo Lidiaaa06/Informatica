@@ -10,8 +10,8 @@ public class Frazione
     {   int a;
         Frazione n;
 
-        Frazione f1(8,12)
-        Frazione f2(10,21)
+        Frazione f1=new Frazione(8,12);
+        Frazione f2=new Frazione(10,21);
 
         a=f1.getDenominatore();
         System.out.println("denominatore "+ a);
