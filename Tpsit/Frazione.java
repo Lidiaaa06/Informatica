@@ -9,9 +9,6 @@ public class Frazione
     public static void main(String[] args)
     {
 
-       
-
-       
     }
 
     public Frazione() {
@@ -24,22 +21,26 @@ public class Frazione
         this.numeratore = numeratore;
         this.denominatore = denominatore;
     }
+
     // Metodo per ottenere il numeratore
     public int getNumeratore()
     {
         return numeratore;
     }
+
 // Metodo per ottenere il denominatore
     public int getDenominatore() 
     {
         return denominatore;
     }
+
     // Metodo per ottenere la rappresentazione testuale della frazione
     @Override
     public String toString() 
     {
         return numeratore + "/" + denominatore;
     }
+    
     // Metodo per sommare due frazioni
     public Frazione somma(Frazione altraFrazione) 
     {
