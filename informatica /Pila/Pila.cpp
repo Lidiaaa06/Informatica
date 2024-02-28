@@ -18,7 +18,7 @@ Pila::Pila(int size)
 
 bool Pila::isEmpty()
 {
-    if(fine=0)return true;
+    if(fine==0)return true;
     return false;
 }
 
@@ -30,5 +30,5 @@ bool Pila::isFull()
 
 bool Pila::push(int x)
 {
-    
+
 }
