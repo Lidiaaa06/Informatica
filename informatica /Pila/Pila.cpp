@@ -30,5 +30,10 @@ bool Pila::isFull()
 
 bool Pila::push(int x)
 {
-
-}
+    if(!isFull)
+    {
+      vet[fine]=x;
+      fine++;
+    }
+ }
+   
