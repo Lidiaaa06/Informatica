@@ -52,7 +52,9 @@ bool Pila::push(int x)
 
 int Pila::top(void)
 {
+    if(!isEmpty)
     return vet[fine-1];
+    return 0;
 }
    
 void Pila::stampa()
