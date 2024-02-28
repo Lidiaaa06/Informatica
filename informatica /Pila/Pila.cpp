@@ -49,8 +49,18 @@ bool Pila::push(int x)
     }
     return false;
  }
-   
-void Pila::stampa(int x)
+
+int Pila::top(void)
 {
-    
+    return vet[fine-1];
+}
+   
+void Pila::stampa()
+{
+    if(!isEmpty)
+  for(int i=0;i<fine;i++) 
+  {
+    cout<<vet[i]<<endl;
+  } 
+  
 }
