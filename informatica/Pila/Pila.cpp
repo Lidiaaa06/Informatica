@@ -30,19 +30,19 @@ bool Pila::isFull()
 
 bool Pila::push(int x)
 {
-    if(!isFull)
+    if(!isFull())
     {
       vet[fine]=x;
       fine++;
+      cout<<"sto inserendo il numero "<<x<<endl;
       return true;
-      
     }
     return false;
  }
 
  bool Pila::pop(void)
  {
-     if(!isEmpty)
+     if(!isEmpty())
     {
       fine--;
       return true;
@@ -52,14 +52,14 @@ bool Pila::push(int x)
 
 int Pila::top(void)
 {
-    if(!isEmpty)
+    if(!isEmpty())
     return vet[fine-1];
     return 0;
 }
    
 void Pila::stampa()
 {
-    if(!isEmpty)
+    if(!isEmpty())
   for(int i=0;i<fine;i++) 
   {
     cout<<vet[i]<<endl;

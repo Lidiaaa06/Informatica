@@ -7,6 +7,7 @@ int main()
     
     r1.push(10);
     r1.push(21);
+    r1.stampa();
     r1.pop();
     r1.stampa();
 
