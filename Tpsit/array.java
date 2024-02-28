@@ -3,9 +3,10 @@ public class array
 {
 public static void main(String args[]) throws NumberFormatException, IOException
 {
-    somma1();
-    somma();
-    AdiK();
+    //somma1();
+    //somma();
+    //AdiK();
+    massimo();
 }
 
 public static void somma1()throws NumberFormatException, IOException 
@@ -69,7 +70,7 @@ public static void AdiK()
 
     int c=0,i=0;
 
-    for( i=0;i<v.length; i++)
+    for(  i=0;i<v.length; i++)
     {
         if(v[i]<0)   c++;
     }
@@ -81,13 +82,13 @@ public static void massimo()
 {
     double[] v = {2 ,3,-4,5,-6};
 
-    int max=v[0]
+    double max=v[0];
 
-    for(i=0;i<v.length;i++)
+    for(int i=0;i<v.length;i++)
     {
         if(v[i]>max)
         {
-            v[i]=max;
+            max=v[i];
         }
     }
     System.out.println("il massimo è "+ max);
