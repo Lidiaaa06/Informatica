@@ -34,6 +34,23 @@ bool Pila::push(int x)
     {
       vet[fine]=x;
       fine++;
+      return true;
+      
     }
+    return false;
+ }
+
+ bool Pila::pop(void)
+ {
+     if(!isEmpty)
+    {
+      fine--;
+      return true;
+    }
+    return false;
  }
    
+void Pila::stampa(int x)
+{
+    
+}
