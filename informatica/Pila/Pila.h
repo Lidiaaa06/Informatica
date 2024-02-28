@@ -7,14 +7,16 @@ class Pila
     int *vet;
     int size;
     int fine;
+    
     public:
     Pila();
     Pila(int);
     bool isEmpty();
     bool isFull();
-    bool push();
+    bool push(int);
     bool pop();
-    bool top(void);
+    int top();
+    void stampa(void);
 
 };
 #endif
