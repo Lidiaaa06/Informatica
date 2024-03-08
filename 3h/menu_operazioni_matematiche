@@ -1,0 +1,86 @@
+#include<stdio.h>
+int addizione(int,int);
+int sottrazione(int,int);
+int moltiplicazione(int,int);
+int divisione (int,int);
+
+int main()
+{
+	int n1,n2;
+	
+	system("cls");
+		printf("Menu \n");
+		printf("+-----------------------------------------------+\n");
+		printf("|Digita:                                        |\n");
+		printf("| 1) per fare un addizione                      |\n");
+		printf("| 2) per fare una sottrazione                   |\n");
+		printf("| 3) per fare una moltiplicazione               |\n");
+		printf("| 4) per fare una divisione                     |\n");  		
+		printf("| 0) per uscire                                 |\n");
+		printf("+-----------------------------------------------+\n");
+		scanf("%d", &risposta);
+		switch(risposta){
+			case 1: 
+				printf("inserisci 2 numeri");
+				scanf("%d %d",& n1,n2);
+				printf("il risultato e %d ");
+				scanf("%d",&addizione);
+				break;
+			case 2: 
+				printf("inserisci 2 numeri");
+				scanf("%d %d",& n1,n2);
+				printf("il risultato e %d ");
+				scanf("%d",&sottrazione);
+				break;
+			case 3: 
+				printf("inserisci 2 numeri");
+				scanf("%d %d",& n1,n2);
+				printf("il risultato e %d ");
+				scanf("%d",&moltiplicazione);
+				break;
+			case 4: 
+				printf("inserisci 2 numeri");
+				scanf("%d %d",& n1,n2);
+				printf("il risultato e %d ");
+				scanf("%d",&divisione);
+			
+				system("pause");
+		}	
+	}while(risposta != 0);
+		
+	return 0;
+}
+}
+
+int addizione(int n1,int n2)
+{
+	somma=n1+n2;
+	
+	return somma;
+}
+
+int sottrazione(int n1,int n2)
+{
+	differenza=n1-n2;
+	
+	return differenza;
+}
+
+int moltiplicazione(int n1, int n2)
+{
+	prodotto=n1*n2;
+	
+	return prodotto;
+}
+
+int divisione (int n1,int n2)
+{
+	quoziente=n1/n2;
+	
+	if(n2>n1)
+	{
+		printf("errore");
+	}
+	
+	return quoziente;
+}
