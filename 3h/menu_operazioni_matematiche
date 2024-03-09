@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stlib.h>
 int addizione(int,int);
 int sottrazione(int,int);
 int moltiplicazione(int,int);
@@ -7,7 +8,7 @@ int divisione (int,int);
 int main()
 {
 	int n1,n2;
-	
+   do {
 	system("cls");
 		printf("Menu \n");
 		printf("+-----------------------------------------------+\n");
