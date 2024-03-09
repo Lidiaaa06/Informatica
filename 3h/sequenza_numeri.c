@@ -1,3 +1,5 @@
+#include<stdio.h>
+int somma=0;
 int main()
 {
     int a;
@@ -9,7 +11,6 @@ int main()
 int numeri(int n)
 {
     int c=0;
-    int somma=0;
 	
 	do
 	{
@@ -20,7 +21,7 @@ int numeri(int n)
 	    {
 	    	c++;
 	    	somma+=n;
-		}
+	     }
 		
 	}while(n!=0);
 	return c;
