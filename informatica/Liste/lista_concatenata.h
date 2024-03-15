@@ -1,7 +1,7 @@
-#ifdef LISTA_H
+#ifndef LISTA_H
 #define LISTA_H
 #include<iostream>
-using namespace std
+using namespace std;
 struct nodo
 {
    int info;
