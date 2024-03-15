@@ -1,11 +1,12 @@
 import java.io.*;
 import java.util.Scanner;
 
-public class Stringhe {
+public class Stringhe 
+{
 
-    public static void main(String [] args) {
-        
-        Scanner scanner = new Scanner(System.in);
+    public static void main(String [] args) 
+    {
+        Scanner scanner = new Scanner(System.in); //oggetto che legge la tastiera
 
         System.out.print("Inserisci una stringa: ");
         String stringa = scanner.nextLine();
@@ -50,14 +51,14 @@ public class Stringhe {
 
     }
 
-    /*
-     * Questa funzione restituisce true se la stringa è palindroma, false altrimenti
-     */
+    
+     //Questa funzione restituisce true se la stringa è palindroma, false se non lo è
+     
     public static boolean isPalindromo(String stringa)
     {
         for(int i = 0; i < stringa.length() / 2; i++) 
         {
-            if (stringa.charAt(i)!= stringa.charAt(stringa.length() - 1 - i)) // se il carattere di indice(i) è uguale 
+            if (stringa.charAt(i)!= stringa.charAt(stringa.length() - 1 - i)) 
             {
                 return false;
             }
