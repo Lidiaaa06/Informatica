@@ -5,10 +5,11 @@ using namespace std;
 void coda::push(int x)
 {
     p=testa;
-    
-    do{
+
+    while(p->next!=NULL)
+    {
         p=p->next;
-    } while(p->next!=NULL);
+    } 
     p->next=new nodo;
     p=p->next;
     p->info=x;
