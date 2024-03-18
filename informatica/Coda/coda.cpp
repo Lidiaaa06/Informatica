@@ -4,6 +4,8 @@ using namespace std;
 
 void coda::push(int x)
 {
+    p=testa;
+    
     do{
         p=p->next;
     } while(p->next!=NULL);
