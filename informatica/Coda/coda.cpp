@@ -33,7 +33,7 @@ int coda::top()
 void coda::stampa()
 {p=testa;
   
-    while(p->next!=NULL)
+    while(p!=NULL)
     {
         cout<<p->info<<endl;
         p=p->next;
