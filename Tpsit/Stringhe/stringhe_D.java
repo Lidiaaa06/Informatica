@@ -2,7 +2,7 @@
 import java.io.*;
 import java.util.Scanner;
 
-public class stringhe_C 
+public class stringhe_D 
 {
     public static void main() 
     { 
