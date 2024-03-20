@@ -1,0 +1,110 @@
+ // esercizio b  
+import java.io.*;
+import java.util.Scanner;
+
+public class stringhe_B 
+{
+
+    public static void main(String[] args) 
+    {
+
+        Scanner scanner = new Scanner(System.in);
+
+        // legge stringa
+        System.out.print("Inserisci una stringa: ");
+        String stringa = scanner.nextLine();
+
+        // legge una seconda stringa
+        System.out.print("Inserisci una stringa: ");
+        String stringa2 = scanner.nextLine();
+
+        // controlla se le stringhe sono uguali
+        if (stringa.equalsIgnoreCase(stringa2))
+            System.out.println("le stringhe sono uguali");
+        else
+            System.out.println("le stringhe non sono uguali");
+
+        // legge un numero intero
+        System.out.print("Inserisci un numero intero: ");
+        stringa2 = scanner.nextLine();
+
+        int x = Integer.parseInt(stringa2);
+        System.out.println("Il numero inserito è: " + x);
+
+        // legge un numero decimale
+        System.out.println("Inserisci un numero decimale: ");
+        stringa2 = scanner.nextLine();
+
+        float y = Float.parseFloat(stringa2);
+        System.out.println("Il numero inserito è: " + y);
+
+        // legge una stringa e la riscrive una parola per riga
+        System.out.println("inserisci una frase: ");
+        stringa = scanner.nextLine();
+
+        String[] parole = stringa.split(" ");
+        for (int i = 0; i < parole.length; i++) {
+            System.out.println(parole[i]);
+        }
+
+        // legge una stringa e stampa i primi 5 caratteri
+        System.out.println("inserisci una parola di almeno 6 caratteri: ");
+        stringa = scanner.nextLine();
+        System.out.println(stringa.substring(0, 5));
+
+        // legge una stringa e ne stampa gli ultimi 5 caratteri
+        System.out.println("inserisci una parola di almeno 6 caratteri: ");
+        stringa = scanner.nextLine();
+        System.out.println(stringa.substring(stringa.length() - 5));
+
+        // legge una frase e stampa la parola piu lunga
+        System.out.println("inserisci una frase: ");
+        stringa = scanner.nextLine();
+        parole = stringa.split(" ");
+
+        x = 0;
+
+        for (int i = 0; i < parole.length; i++) {
+            if (parole[i].length() > parole[x].length()) {
+                x = i;
+            }
+        }
+
+        System.out.println("la parola piu lunga e: " + parole[x]);
+
+        // legge una stringa e controlla se e una sigla
+        System.out.println("inserisci una stringa: ");
+        stringa = scanner.nextLine();
+        boolean c = true;
+
+        for (int i = 0; i < stringa.length(); i += 2) {
+            if (stringa.charAt(i) != '.') {
+                c = false;
+            }
+        }
+
+        if (c)
+            System.out.println("la stringa e una siglia");
+        else
+            System.out.println("la stringa non e una siglia");
+
+        // legge due stringhe e controlla se sono anagrammi
+        System.out.println("inserisci due parole: ");
+        stringa = scanner.nextLine();
+        stringa2 = scanner.nextLine();
+
+        char[] lettere = stringa.toCharArray();
+        c = true;
+
+        for (int i = 0; i < stringa2.length(); i++)
+            if (stringa2.indexOf(lettere[i]) == -1)
+                c = false;
+
+        if (c)
+            System.out.println("le stringhe sono anagrammi");
+        else
+            System.out.println("le stringhe non sono anagrammi");
+
+        scanner.close();
+    }
+}

@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.Scanner;
 
-public class Stringhe 
+public class stringhe_A 
 {
 
     public static void main(String [] args) 
