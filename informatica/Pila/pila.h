@@ -1,5 +1,5 @@
-#ifndef LISTA_H
-#define LISTA_H
+#ifndef PILA_H
+#define PILA_H
 #include<iostream>
 using namespace std;
 struct nodo
@@ -9,14 +9,14 @@ struct nodo
 
 }typedef nodo;
 
-class lista
+class pila
 {
     private:
         nodo * testa;
         nodo * p;
 
     public:
-        lista(int dato=0)
+        pila(int dato=0)
         {
             testa = new nodo;
             testa->info = 0;

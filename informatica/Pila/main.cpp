@@ -1,14 +1,14 @@
-#include <iostream>
-#include "Pila.h"
-int main()
-{
-    Pila r1;
-    Pila r2(10);
-    
-    r1.push(10);
-    r1.push(21);
-    r1.stampa();
-    r1.pop();
-    r1.stampa();
+#include<iostream>
+#include "pila.h"
+using namespace std;
 
+int  main()
+{
+    pila p1;
+    p1.push(12);
+    p1.push(10);
+    p1.pop();
+    p1.push(21);
+    p1.top();
+    p1.stampa();
 }

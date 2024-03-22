@@ -1,8 +1,8 @@
-#include"lista_concatenata.h"
+#include"pila.h"
 #include<iostream>
 using namespace std;
 
-void lista::push(int x)
+void pila::push(int x)
 {
     p=new nodo;
     p->info=x;
@@ -10,25 +10,26 @@ void lista::push(int x)
     testa=p;
 }
 
-void lista::pop()
+void pila::pop()
 {
     p=testa;
     testa=testa->next;
     delete p;
 }
 
-int lista::top()
+int pila::top()
 {
     return testa->info;
 }
 
 
-void lista::stampa()
+void pila::stampa()
 {p=testa;
     do
     {
         cout<<p->info<<endl;
         p=p->next;
+        
     }while(p->next!=NULL);
 }
     
