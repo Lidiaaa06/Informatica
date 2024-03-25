@@ -18,7 +18,9 @@ class coda
     public:
         coda(int dato=0)
         {
-            testa = NULL;
+            testa = new nodo;
+            testa->info = 0;
+            testa->next=NULL;
         }
 
         void push(int);
