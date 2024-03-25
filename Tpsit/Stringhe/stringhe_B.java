@@ -80,6 +80,7 @@ public class stringhe_B
 
         // legge una stringa e controlla se e una sigla
         System.out.println("inserisci una stringa: ");
+        System.out.printf("ciao");
         stringa = scanner.nextLine();
         boolean c = true; // variabile di controllo
 
