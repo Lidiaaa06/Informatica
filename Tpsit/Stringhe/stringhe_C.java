@@ -119,7 +119,8 @@ public class stringhe_C
         c = true;
 
         for (int i = 0; i < stringa.length(); i++)
-            if (!Character.isDigit(stringa.charAt(i))) {
+            if (!Character.isDigit(stringa.charAt(i))) 
+            {
                 c = false;
             }
 

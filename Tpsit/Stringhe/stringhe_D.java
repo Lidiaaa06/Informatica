@@ -27,7 +27,8 @@ public class stringhe_D
         stringa2 = stringa;
 
         //camelCase
-        for (int i = 1; i < parole.length; i++) {
+        for (int i = 1; i < parole.length; i++) 
+        {
             parole[i] = parole[i].substring(0, 1).toUpperCase() + parole[i].substring(1);
         }
 
@@ -38,7 +39,8 @@ public class stringhe_D
 
         //PascalCase
 
-        for (int i = 0; i < parole.length; i++) {
+        for (int i = 0; i < parole.length; i++) 
+        {
             parole[i] = parole[i].substring(0, 1).toUpperCase() + parole[i].substring(1);
         }
 
