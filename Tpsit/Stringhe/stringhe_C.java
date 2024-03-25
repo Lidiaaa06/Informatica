@@ -55,7 +55,8 @@ public class stringhe_C
         int[] numeri2 = new int[numeri.length];
         c = true;
 
-        for (int i = 0; i < numeri.length; i++) {
+        for (int i = 0; i < numeri.length; i++) 
+        {
             numeri2[i] = Integer.parseInt(numeri[i]);
             if ((numeri2[i] > 255 && numeri2[1] < 0) || i > 3)
                 c = false;
@@ -78,12 +79,14 @@ public class stringhe_C
         c = true;
 
         for (int i = 0; i < lettere.length(); i++)
-            if (!Character.isLetter(lettere.charAt(i))) {
+            if (!Character.isLetter(lettere.charAt(i))) 
+            {
                 c = false;
             }
 
         for (int i = 0; i < num.length(); i++)
-            if (!Character.isDigit(num.charAt(i))) {
+            if (!Character.isDigit(num.charAt(i))) 
+            {
                 c = false;
             }
 
