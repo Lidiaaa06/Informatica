@@ -4,17 +4,20 @@ import java.util.Scanner;
 
 public class stringhe_C 
 {
-    public static void main() {
+    public static void main() 
+    {
         Scanner scanner = new Scanner(System.in);
 
-        // controlla se un numero di telefono e valido
+        // controlla se un numero di telefono è valido
         System.out.println("Inserisci un numero di telefono: ");
         String stringa = scanner.nextLine();
 
-        boolean c = true;
+        boolean c = true; // variabile di controllo
 
-        for (int i = 0; i < stringa.length(); i++) {
-            if (!Character.isDigit(stringa.charAt(i))) {
+        for (int i = 0; i < stringa.length(); i++) 
+        {
+            if (!Character.isDigit(stringa.charAt(i))) // 
+            {
                 c = false;
             }
         }
