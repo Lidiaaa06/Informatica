@@ -16,12 +16,13 @@ public class stringhe_C
 
         for (int i = 0; i < stringa.length(); i++) 
         {
-            if (!Character.isDigit(stringa.charAt(i))) // 
+            if (!Character.isDigit(stringa.charAt(i))) // controlla se è una cifra
             {
                 c = false;
             }
         }
 
+        // se sono tutte cifre, sono 10 cifre, e la prima è un 3
         if (c && stringa.charAt(0) == '3' && stringa.length() == 10)
             System.out.println("Numero di telefono valido");
         else
