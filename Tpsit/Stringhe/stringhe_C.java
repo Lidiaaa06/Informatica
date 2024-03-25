@@ -32,7 +32,7 @@ public class stringhe_C
         System.out.println("Inserisci un email: ");
         stringa = scanner.nextLine();
 
-        // se la 
+        // se c'è una @ restituisce indice della @
         if (stringa.indexOf("@") != -1)
             System.out.println("Email valido");
         else
