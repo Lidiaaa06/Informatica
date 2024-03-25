@@ -101,7 +101,7 @@ public class stringhe_B
         stringa = scanner.nextLine();
         stringa2 = scanner.nextLine();
 
-        char[] lettere = stringa.toCharArray();
+        char[] lettere = stringa.toCharArray(); 
         c = true;
 
         for (int i = 0; i < stringa2.length(); i++)

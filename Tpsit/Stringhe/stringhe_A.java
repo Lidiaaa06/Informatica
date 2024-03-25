@@ -29,7 +29,7 @@ public class stringhe_A
         {
             if (stringa.charAt(i) == 'a') 
             {
-                c++;
+                c++; 
             }
         }
         System.out.println("Numero di 'a' = " + c);
