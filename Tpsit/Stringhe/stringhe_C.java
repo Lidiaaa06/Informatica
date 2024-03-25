@@ -29,10 +29,10 @@ public class stringhe_C
             System.out.println("Numero di telefono non valido");
 
         // controlla se un email e valida
-
         System.out.println("Inserisci un email: ");
         stringa = scanner.nextLine();
 
+        // se la 
         if (stringa.indexOf("@") != -1)
             System.out.println("Email valido");
         else
