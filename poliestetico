@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+ <meta name="viewport" content="width=device-width, initial-scale=2.0">
+ 
+  <title>"hai altre domande?"</title>
+
+<body>
+
+  <text> Nome e Cognome</text>
+  <text><h0.5 style="color: #ff0000">(campo obbligatorio)</h0.5></text>        
+  <input type="text" placeholder=" " id="nome cognome">
+  <text><h0.5 style="color: #808080"> Nome e Cognome </h0.5></text>
+ <br>
+
+ <text> Email</text>
+ <text><h0.5 style="color: #ff0000">(campo obbligatorio)</h0.5></text>
+ <input type="email" placeholder=" " id="email">
+ <text><h0.5 style="color: #808080">inserire un indirizzo Email<h0.5></text>
+ <br>
+
+  <text> Recapito Telefonico</text>
+  <text><h0.5 style="color: #ff0000">(campo obbligatorio)</h0.5></text>
+ <input type="tel" placeholder="+39 " id="tel">
+ <br>
+
+ <text> Orario in cui si preferisce essere contattati</text>
+ <input type="time" placeholder="Orario " id="time">
+ <br>
+
+ <text> Richiesta</text>
+ <text><h0.5 style="color: #ff0000">(campo obbligatorio)</h0.5></text>
+[textarea* your-message placeholder "Maggiori informazioni riguardo..."] </label>
+ <text><h0.5 style="color: #808080"> Maggiori informazioni a riguardo... </h0.5></text>
+ <br>
+
+[submit class:button "Invia"]
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+ <meta name="viewport" content="width=device-width, initial-scale=2.0">
+ 
+  <title>"hai altre domande?"</title>
+
+<body>
+
+<table>
+<tr><td><text> Nome e Cognome</text><text><h0.5 style="color: #ff0000">(campo obbligatorio)</h0.5><br></td>
+<td><br></td>
+<td><input type="text" placeholder="nome e cognome " id="nome cognome"></td></tr>
+
+
+<tr><td><text> Email</text><text><h0.5 style="color: #ff0000">(campo obbligatorio)</h0.5></text><br><br></td>
+<td><br></td>
+<td><input type="email" placeholder="email" id="email"></td></tr>
+
+
+<tr><td><text> Recapito Telefonico</text><text><h0.5 style="color: #ff0000">(campo obbligatorio)</h0.5></text></td>
+<td><br></td>
+<td><input type="tel" placeholder="+39 " id="tel"></td></tr>
+
+
+<tr><td> <text> Orario in cui si preferisce essere contattati</text><br></td>
+<td><br></td>
+<td><input type="time" placeholder="Orario " id="time"></td></tr>
+
+
+<tr><td><text> Richiesta</text><text><h0.5 style="color: #ff0000">(campo obbligatorio)</h0.5></text><br></td>
+<td><br></td>
+<td>[textarea* your-message placeholder "Maggiori informazioni riguardo..."] </label></td></tr>
+
+</table>
+
+[submit class:button "Invia"]
