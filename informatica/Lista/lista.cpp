@@ -10,10 +10,10 @@ lista::lista()
 
 void lista::InsInTesta(int x)    
 {
-    nodo* nuovo=new nodo;
-    nuovo->info=x;
-    nuovo->next=testa;
-    testa=nuovo;
+    nodo* l=new nodo;
+    l->info=x;
+    l->next=testa;
+    testa=l;
 }
 
 void lista::cancellaTesta()
@@ -34,10 +34,10 @@ void lista::InsInCoda(int x)
     {
         p=p->next;
     }
-    nodo* nuovo=new nodo;
-    nuovo->info=x;
-    nuovo->next=testa;
-    testa=nuovo;
+    nodo* l=new nodo;
+    l->info=x;
+    l->next=testa;
+    testa=l;
 }   
 
 void  lista::CancellaCoda() 
