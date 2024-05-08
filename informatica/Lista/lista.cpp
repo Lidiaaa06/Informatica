@@ -42,9 +42,16 @@ void lista::InsInCoda(int x)
 
 void  lista::CancellaCoda() 
 {
+  if(IsEmpty())
+  {
     nodo*p=testa;
-    while(p->next->next!=NULL)
-
+    while(p->next!=NULL)
+    {
+        p=p->next;
+    }
+    nodo*l=p;
+    
+  }
 }   
 
 void lista::StampaLista()
@@ -60,7 +67,8 @@ void lista::StampaLista()
 
 bool lista::IsEmpty()
 {
-
+    if(testa==NULL) return true;
+    return false;
 }
 
 void lista::InserisciPosizione(int x,int y)
