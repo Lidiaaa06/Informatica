@@ -51,6 +51,7 @@ void lista::StampaLista()
 bool lista::IsEmpty()
 {
 
+    
 }
 
 void lista::InserisciPosizione(int x,int y)
