@@ -42,8 +42,9 @@ void lista::InsInCoda(int x)
 
 void  lista::CancellaCoda() 
 {
-    nodo*p;
-    
+    nodo*p=testa;
+    while(p->next->next!=NULL)
+
 }   
 
 void lista::StampaLista()
