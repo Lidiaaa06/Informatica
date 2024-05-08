@@ -12,10 +12,10 @@ void lista::cancellaTesta()
 
 } 
 
- void lista::InsInCoda(int x)
- {
+void lista::InsInCoda(int x)
+{
 
- }   
+}   
 
 void  lista::CancellaCoda() 
 {
