@@ -13,20 +13,15 @@ class lista
 {
     private:
         nodo * testa;
-        nodo * p;
-
     public:
-        lista(int dato=0)
-        {
-            testa = new nodo;
-            testa->info = 0;
-            testa->next=NULL;
-        }
-
-        void push(int);
-        void pop();
-        int top();
-        void stampa();
-};
+       Lista();   
+       void InsInTesta(int);    
+       void cancellaTesta();                   
+       void InsInCoda(int);   
+       void CancellaCoda();     
+       void StampaLista();  
+       bool IsEmpty();
+       void InserisciPosizione(int,int);
+       void CancellaPosizione(int);
 
 #endif
