@@ -2,9 +2,15 @@
 #include<iostream>
 using namespace std;
 
+lista::lista()
+{
+    this->testa=NULL;
+}
+
+
 void lista::InsInTesta(int x)    
 {
-
+    
 }
 
 void lista::cancellaTesta()
