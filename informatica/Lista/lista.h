@@ -3,7 +3,8 @@
 #include<iostream>
 using namespace std;
 
-struct s_nodo{
+struct s_nodo
+{
    int info;
    struct s_nodo* next;
 }; typedef struct s_nodo nodo
