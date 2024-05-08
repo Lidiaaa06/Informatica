@@ -12,13 +12,19 @@ void lista::InsInTesta(int x)
 {
     nodo* nuovo=new nodo;
     nuovo->info=x;
-    nuovo->next=this->testa;
-    this->testa=nuovo;
+    nuovo->next=testa;
+    testa=nuovo;
 }
 
 void lista::cancellaTesta()
 {
-
+   nodo*c;
+   if(testa!=NULL)
+   {
+       c=testa;
+       testa=testa->next;
+       delete c;
+   }
 } 
 
 void lista::InsInCoda(int x)
