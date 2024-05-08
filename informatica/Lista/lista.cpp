@@ -32,9 +32,12 @@ void lista::InsInCoda(int x)
     nodo *p=new testa;
     while(p->next!=NULL)
     {
-        p++;
+        p=p->next;
     }
-    
+    nodo* nuovo=new nodo;
+    nuovo->info=x;
+    nuovo->next=testa;
+    testa=nuovo;
 }   
 
 void  lista::CancellaCoda() 
