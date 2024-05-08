@@ -32,10 +32,10 @@ bool lista::IsEmpty()
 
 }
 
- void lista::InserisciPosizione(int x,int y)
- {
+void lista::InserisciPosizione(int x,int y)
+{
 
- }
+}
 
 void lista::CancellaPosizione(int x)
 {
