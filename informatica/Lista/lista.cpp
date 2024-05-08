@@ -2,7 +2,42 @@
 #include<iostream>
 using namespace std;
 
-void lista::InsInTesta(int);    
+void lista::InsInTesta(int x)    
 {
-    
+
+}
+
+void lista::cancellaTesta()
+{
+
+} 
+
+ void lista::InsInCoda(int x)
+ {
+
+ }   
+
+void  lista::CancellaCoda() 
+{
+
+}   
+
+void lista::StampaLista()
+{
+
+}  
+
+bool lista::IsEmpty()
+{
+
+}
+
+ void lista::InserisciPosizione(int x,int y)
+ {
+
+ }
+
+void lista::CancellaPosizione(int x)
+{
+
 }
