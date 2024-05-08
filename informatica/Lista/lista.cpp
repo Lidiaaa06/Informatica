@@ -49,7 +49,7 @@ void  lista::CancellaCoda()
     {
         p=p->next;
     }
-    nodo*l=p;
+    nodo*l=p->next;
     delete l;
   }
 }   
