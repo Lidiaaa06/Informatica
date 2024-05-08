@@ -23,5 +23,5 @@ class lista
        bool IsEmpty();
        void InserisciPosizione(int,int);
        void CancellaPosizione(int);
-
+}
 #endif
