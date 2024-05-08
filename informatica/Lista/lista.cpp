@@ -50,7 +50,7 @@ void  lista::CancellaCoda()
         p=p->next;
     }
     nodo*l=p;
-    
+    delete l;
   }
 }   
 
