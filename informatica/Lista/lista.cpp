@@ -10,7 +10,10 @@ lista::lista()
 
 void lista::InsInTesta(int x)    
 {
-    
+    nodo* nuovo=new nodo;
+    nuovo->info=x;
+    nuovo->next=this->testa;
+    this->testa=nuovo;
 }
 
 void lista::cancellaTesta()
