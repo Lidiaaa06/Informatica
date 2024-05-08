@@ -39,7 +39,13 @@ void  lista::CancellaCoda()
 
 void lista::StampaLista()
 {
-
+    nodo*c= testa;
+    while(c!=NULL)
+    {
+    cout<<c->info<<endl;
+    c=c->next;
+    }
+    cout<<endl;
 }  
 
 bool lista::IsEmpty()
