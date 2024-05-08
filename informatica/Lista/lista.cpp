@@ -46,11 +46,13 @@ void  lista::CancellaCoda()
   {
     nodo*p=testa;
     while(p->next!=NULL)
-    {
+    { 
+        nodo*l=p->next;
         p=p->next;
+        l->next=NULL;
+        delete l;
     }
-    nodo*l=p->next;
-    delete l;
+   
   }
 }   
 
