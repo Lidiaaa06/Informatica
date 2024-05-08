@@ -42,7 +42,8 @@ void lista::InsInCoda(int x)
 
 void  lista::CancellaCoda() 
 {
-
+    nodo*p;
+    
 }   
 
 void lista::StampaLista()
