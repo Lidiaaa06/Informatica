@@ -1,0 +1,16 @@
+body 
+{
+    text-align: center;
+}
+
+button 
+{
+    padding: 10px;
+    margin: 10px;
+}
+
+.pulsanti
+{
+    color: #FFFFFF;
+    background-color: #0000FF;
+}

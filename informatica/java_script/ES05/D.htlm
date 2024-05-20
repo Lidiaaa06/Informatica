@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <title>Esercizio D</title>
+
+    <link rel="stylesheet" href="D_stile.css">
+
+    
+</head>
+
+<body>
+    <p id="maiuscolo">Testo che deve essere maiuscolo</p>
+</body>
+<script src="script.js"></script>
+</html>

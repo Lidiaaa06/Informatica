@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Esercizio C</title>
+
+    <link rel="stylesheet" href="C_stile.css">
+
+
+</head>
+
+<body>
+
+    <button>Primo</button>
+    <br>
+    <button>Secondo</button>
+
+</body>
+<script src="script.js"></script>
+
+</html>
