@@ -15,7 +15,7 @@ for (i = 1; i < 11; i++)
         riga.appendChild(casella)
     }
 
-    if (i % 2 == 1) riga.setAttribute("class", "evidenziato")
+    if (i % 2 == 1) riga.setAttribute("class", "evidenziato") //Aggiunge la classe evidenziato alle righe dispari
     
     tabella.appendChild(riga)
 }
