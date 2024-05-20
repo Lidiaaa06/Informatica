@@ -1,23 +1,22 @@
-tabella = document.createElement("table")
+tabella = document.createElement("table") //Crea una tabella
 
 for (i = 1; i < 11; i++) 
 {
 
-    riga = document.createElement("tr")
+    riga = document.createElement("tr") //Crea una riga
 
-    for (j = 1; j < 11; j++) 
+    for (j = 1; j < 11; j++)
     {
         
-        if (i == 1 || j == 1) casella = document.createElement("th")
-        else casella = document.createElement("td")
+        casella = document.createElement("td")//Crea una casella
         
-        casella.innerHTML = i * j
-        riga.appendChild(casella)
+        casella.innerHTML = i * j //Inserisce il risultato della moltiplicazione nella casella
+        riga.appendChild(casella)//Aggiunge la casella alla riga
     }
 
     if (i % 2 == 1) riga.setAttribute("class", "evidenziato") //Aggiunge la classe evidenziato alle righe dispari
     
-    tabella.appendChild(riga)
+    tabella.appendChild(riga) //Aggiunge la riga alla tabella
 }
 
 document.body.appendChild(tabella)
