@@ -13,5 +13,5 @@
 <body>
     <p id="maiuscolo">Testo che deve essere maiuscolo</p>
 </body>
-<script src="script.js"></script>
+<script src="D.js"></script>
 </html>
