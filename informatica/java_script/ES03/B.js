@@ -1,6 +1,6 @@
 libro = 
 {
-    Titolo: "Informatica",
+    Titolo: "Informatica", 
     Autore: "Vetromile",
     AnnoDiPubblicazione: "2012",
     Genere: "Scolastico",
