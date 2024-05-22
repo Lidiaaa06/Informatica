@@ -8,11 +8,11 @@ public class stringhe_B
     public static void main(String[] args) 
     {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);//oggetto che legge la tastiera
 
         // legge stringa
         System.out.print("Inserisci una stringa: ");
-        String stringa = scanner.nextLine();
+        String stringa = scanner.nextLine(); // scanf
 
         // legge la seconda stringa
         System.out.print("Inserisci una stringa: ");
@@ -32,7 +32,7 @@ public class stringhe_B
         int x = Integer.parseInt(stringa2);
         System.out.println("Il numero inserito è: " + x);
 
-        // legge un numero decimale
+        // legge un numero con la virgola
         System.out.println("Inserisci un numero decimale: ");
         stringa2 = scanner.nextLine();
 
@@ -45,7 +45,7 @@ public class stringhe_B
         stringa = scanner.nextLine();
 
         //crea un vettore di parole e ogni volta che c'è uno spazio divide
-        String[] parole = stringa.split(" "); // split divide con uno spazio
+        String[] parole = stringa.split(" "); // split divide dove c'è uno spazio
         for (int i = 0; i < parole.length; i++)
         {
             System.out.println(parole[i]);
@@ -54,7 +54,7 @@ public class stringhe_B
         // legge una stringa e stampa i primi 5 caratteri
         System.out.println("inserisci una parola di almeno 6 caratteri: ");
         stringa = scanner.nextLine(); // legge la prossima stringa
-        System.out.println(stringa.substring(0, 5));
+        System.out.println(stringa.substring(0, 5));// substring crea una seconda stringa dal primo al quinto carattere e lo stampa
 
         // legge una stringa e ne stampa gli ultimi 5 caratteri
         System.out.println("inserisci una parola di almeno 6 caratteri: ");

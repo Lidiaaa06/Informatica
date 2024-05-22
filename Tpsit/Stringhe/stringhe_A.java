@@ -9,25 +9,25 @@ public class stringhe_A
         Scanner scanner = new Scanner(System.in); //oggetto che legge la tastiera
 
         System.out.print("Inserisci una stringa: ");
-        String stringa = scanner.nextLine();
+        String stringa = scanner.nextLine(); //scanf
 
-        stringa.trim(); //toglie gli spazi davanti e dietro
+        stringa.trim(); //toglie gli spazi davanti e dietro alla stringa
 
         System.out.println("Stringa inserita: " + stringa);
 
-        int lunghezza = stringa.length();
+        int lunghezza = stringa.length(); //restituisce la lunghezza della stringa
         System.out.println("lunghezza = " + lunghezza);
 
         char carattere = stringa.charAt(lunghezza / 2);  //restituisce il carattere all'indice passato
         System.out.println("carattere Centrale = " + carattere);
 
         stringa = stringa.substring(0,1).toUpperCase() + stringa.substring(1); //prende una stringa e mette la 1° lettera Maiuscola 
-        System.out.println("Stringa modificata con prima lettera maiuscola = " + stringa);
+        System.out.println("Stringa modificata con prima lettera maiuscola = " + stringa); 
 
         int c = 0;
         for (int i = 0; i < stringa.length(); i++) 
         {
-            if (stringa.charAt(i) == 'a') 
+            if (stringa.charAt(i) == 'a') // se trov il carattere 'a' lo conta
             {
                 c++; 
             }
@@ -47,7 +47,7 @@ public class stringhe_A
         else System.out.println("La stringa non è palindroma");
 
 
-        scanner.close();
+        scanner.close(); //chiude lo scanner
 
     }
 
