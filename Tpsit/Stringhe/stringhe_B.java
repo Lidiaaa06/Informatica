@@ -63,14 +63,14 @@ public class stringhe_B
 
         // legge una frase e stampa la parola piu lunga
         System.out.println("inserisci una frase: ");
-        stringa = scanner.nextLine(); 
-        parole = stringa.split(" ");
+        stringa = scanner.nextLine(); // legge la prossima stringa
+        parole = stringa.split(" "); // split divide dove c'è uno spazio
 
         x = 0;
 
         for (int i = 0; i < parole.length; i++) 
         {
-            if (parole[i].length() > parole[x].length()) 
+            if (parole[i].length() > parole[x].length()) //confronta la lunghezza delle parole
             {
                 x = i;
             }
@@ -91,7 +91,7 @@ public class stringhe_B
             }
         }
 
-        if (c)
+        if (c) //se C è vero
             System.out.println("la stringa e una siglia");
         else
             System.out.println("la stringa non e una siglia");
@@ -101,11 +101,11 @@ public class stringhe_B
         stringa = scanner.nextLine();
         stringa2 = scanner.nextLine();
 
-        char[] lettere = stringa.toCharArray(); 
+        char[] lettere = stringa.toCharArray(); // crea un vettore di caratteri
         c = true;
 
-        for (int i = 0; i < stringa2.length(); i++)
-            if (stringa2.indexOf(lettere[i]) == -1)
+        for (int i = 0; i < stringa2.length(); i++) 
+            if (stringa2.indexOf(lettere[i]) == -1) // se trova la lettera nella stringa2 nn fa nulla
                 c = false;
 
         if (c)
@@ -113,6 +113,6 @@ public class stringhe_B
         else
             System.out.println("le stringhe non sono anagrammi");
 
-        scanner.close();
+        scanner.close(); //chiude lo scanner
     }
 }
