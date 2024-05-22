@@ -6,7 +6,7 @@ public class stringhe_C
 {
     public static void main(String[] args) 
     {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); //oggetto che legge la tastiera
 
         // controlla se un numero di telefono è valido
         System.out.println("Inserisci un numero di telefono: ");
@@ -32,8 +32,8 @@ public class stringhe_C
         System.out.println("Inserisci un email: ");
         stringa = scanner.nextLine();
 
-        // se c'è una @ restituisce indice della @
-        if (stringa.indexOf("@") != -1)
+
+        if (stringa.indexOf("@") != -1) //restituisce l'indice della @
             System.out.println("Email valido");
         else
             System.out.println("Email non valido");
@@ -42,7 +42,7 @@ public class stringhe_C
         System.out.println("Inserisci un url: ");
         stringa = scanner.nextLine();
 
-        if (stringa.indexOf("http://") != -1)
+        if (stringa.indexOf("http://") != -1)//restituisce l'indice di http
             System.out.println("url valido");
         else
             System.out.println("url non valido");
@@ -51,13 +51,13 @@ public class stringhe_C
         System.out.println("inserisci un indirizzo ip: ");
         stringa = scanner.nextLine();
 
-        String[] numeri = stringa.split("\\.");
-        int[] numeri2 = new int[numeri.length];
+        String[] numeri = stringa.split("\\."); // crea un vettore e split divide dove c'è un punto
+        int[] numeri2 = new int[numeri.length]; // crea un vettore di interi
         c = true;
 
         for (int i = 0; i < numeri.length; i++) 
         {
-            numeri2[i] = Integer.parseInt(numeri[i]);
+            numeri2[i] = Integer.parseInt(numeri[i]); // converte in intero
             if ((numeri2[i] > 255 && numeri2[1] < 0) || i > 3)
                 c = false;
         }
@@ -71,21 +71,21 @@ public class stringhe_C
         System.out.println("Inserisci un codice fiscale: ");
         stringa = scanner.nextLine();
 
-        String lettere = stringa.substring(0, 7) + stringa.substring(9, 10) + stringa.substring(12, 13)
+        String lettere = stringa.substring(0, 7) + stringa.substring(9, 10) + stringa.substring(12, 13) // prende le lettere  del codice fiscale e le mette in una stringa
                 + stringa.substring(16);
 
-        String num = stringa.substring(7, 9) + stringa.substring(10, 12) + stringa.substring(13, 16);
+        String num = stringa.substring(7, 9) + stringa.substring(10, 12) + stringa.substring(13, 16); // prende i numeri del codice fiscale e li mette in una stringa
 
         c = true;
 
         for (int i = 0; i < lettere.length(); i++)
-            if (!Character.isLetter(lettere.charAt(i))) 
+            if (!Character.isLetter(lettere.charAt(i))) // controlla se sono lettere
             {
                 c = false;
             }
 
         for (int i = 0; i < num.length(); i++)
-            if (!Character.isDigit(num.charAt(i))) 
+            if (!Character.isDigit(num.charAt(i))) // controlla se sono numeri
             {
                 c = false;
             }
@@ -102,9 +102,9 @@ public class stringhe_C
 
         c = true;
 
-        if (stringa.length() != 27)
+        if (stringa.length() != 27) // controlla la lunghezza
             c = false;
-        if (stringa.substring(0, 3) != "IT")
+        if (stringa.substring(0, 3) != "IT") // controlla se inizia con IT
             c = false;
 
         if (c)
@@ -119,16 +119,16 @@ public class stringhe_C
         c = true;
 
         for (int i = 0; i < stringa.length(); i++)
-            if (!Character.isDigit(stringa.charAt(i))) 
+            if (!Character.isDigit(stringa.charAt(i))) // controlla se sono numeri
             {
                 c = false;
             }
 
-        if (c && stringa.length() == 13)
+        if (c && stringa.length() == 13) // controlla la lunghezza
             System.out.println("codice ISBN-13 valido");
         else
             System.out.println("codice ISBN-13 non valido");
 
-        scanner.close();
+        scanner.close(); // chiude lo scanner
    }
 }
