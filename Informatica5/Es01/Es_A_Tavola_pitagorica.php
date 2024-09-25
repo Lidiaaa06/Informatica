@@ -10,7 +10,8 @@ for($i=0; $i<10; $i++)
 {
      for($j=0; $j<10; $j++) 
      {
-          echo "<tr><td>$i</td></tr>";
+          $c = $i * $j;  
+          echo "<tr><td>$c</td></tr>";
      }
      
 }
