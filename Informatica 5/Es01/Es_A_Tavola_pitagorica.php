@@ -11,6 +11,6 @@ for($i=0; $i<10; $i++)
      echo "<tr><td>$i</td></tr>";
 }
 echo "</table>";
-
+?>
 </body>
 </html>
